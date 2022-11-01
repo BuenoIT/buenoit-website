@@ -26,8 +26,8 @@ const Hero = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Guilherme Bueno's website</HeroH1>
-        <HeroP>Know more about me</HeroP>
+        <HeroH1>Guilherme Bueno's Website</HeroH1>
+        <HeroP>Get to know me better</HeroP>
         <HeroBtnWrapper>
           <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover}>
             About me {hover ? <ArrowForward /> : <ArrowRight />}

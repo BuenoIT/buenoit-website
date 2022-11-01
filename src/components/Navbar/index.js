@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBars } from 'react-icons/fa';
+import Logo from '../../images/guibuenologo.png';
 import {
   Nav,
   NavbarContainer,
@@ -10,6 +11,7 @@ import {
   NavLinks,
   NavBtn,
   NavBtnLink,
+  NavImg,
 } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
@@ -17,7 +19,9 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">Bueno IT</NavLogo>
+          <NavLogo to="/">
+            <NavImg src={Logo}></NavImg>
+          </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
