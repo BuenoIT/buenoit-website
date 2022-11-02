@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 import Skills from '../components/Skills';
 import Topbar from '../components/Topbar';
 
-const Home = () => {
+const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -26,4 +26,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
