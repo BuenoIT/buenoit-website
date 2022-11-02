@@ -29,8 +29,14 @@ const Hero = () => {
         <HeroH1>Guilherme Bueno's Website</HeroH1>
         <HeroP>Get to know me better</HeroP>
         <HeroBtnWrapper>
-          <Button to="about" onMouseEnter={onHover} onMouseLeave={onHover}>
-            About me {hover ? <ArrowForward /> : <ArrowRight />}
+          <Button
+            to="about"
+            onMouseEnter={onHover}
+            onMouseLeave={onHover}
+            primary="true"
+            dark="true"
+          >
+            Get Started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
       </HeroContent>

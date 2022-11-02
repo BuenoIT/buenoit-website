@@ -8,7 +8,7 @@ export const TopbarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #0d0d0d;
+  background: #313131;
   display: grid;
   align-items: center;
   left: 0;
@@ -59,7 +59,7 @@ export const TopBarLink = styled(LinkS)`
   cursor: pointer;
 
   &:hover {
-    color: #01bf71;
+    color: #42c920;
     transition: 0.2 ease-in-out;
   }
 `;
@@ -71,10 +71,10 @@ export const TopBtnWrap = styled.div`
 
 export const TopBarRoute = styled(LinkR)`
   border-radius: 50px;
-  background: #01bf71;
+  background: #fff;
   white-space: nowrap;
   padding: 16px 64px;
-  color: #010606;
+  color: #313131;
   font-size: 16px;
   outline: none;
   border: none;
@@ -84,7 +84,7 @@ export const TopBarRoute = styled(LinkR)`
 
   &:hover {
     transition: all 0.2s ease-in-out;
-    background: #fff;
-    color: #010606;
+    background: #42c920;
+    color: #fff;
   }
 `;
