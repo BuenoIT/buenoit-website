@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import Logo from '../../images/guibuenologo.png';
+import { animateScroll as scroll } from 'react-scroll';
 import {
   Nav,
   NavbarContainer,
@@ -15,11 +16,29 @@ import {
 } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeNav);
+  }, []);
+
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
-      <Nav>
+      <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/">
+          <NavLogo to="/" onClick={toggleHome}>
             <NavImg src={Logo}></NavImg>
           </NavLogo>
           <MobileIcon onClick={toggle}>
@@ -33,7 +52,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={0}
+                offset={-80}
               >
                 About me
               </NavLinks>
@@ -45,7 +64,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={0}
+                offset={-80}
               >
                 Background
               </NavLinks>
@@ -57,7 +76,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={0}
+                offset={-80}
               >
                 Skills
               </NavLinks>
@@ -69,7 +88,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={0}
+                offset={-80}
               >
                 Porfolio
               </NavLinks>
