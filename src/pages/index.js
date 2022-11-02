@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import InfoSection from '../components/Info';
 import { homeObjOne, homeObjThree, homeObjTwo } from '../components/Info/Data';
 import Navbar from '../components/Navbar';
+import Skills from '../components/Skills';
 import Topbar from '../components/Topbar';
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <Hero />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
+      <Skills />
       <InfoSection {...homeObjThree} />
     </>
   );

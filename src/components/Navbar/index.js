@@ -19,7 +19,7 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">
+          <NavLogo to="home">
             <NavImg src={Logo}></NavImg>
           </NavLogo>
           <MobileIcon onClick={toggle}>
@@ -27,13 +27,52 @@ const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About me</NavLinks>
+              <NavLinks
+                to="about"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={0}
+              >
+                About me
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="background">Background</NavLinks>
+              <NavLinks
+                to="background"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={0}
+              >
+                Background
+              </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="portfolio">Porfolio</NavLinks>
+              <NavLinks
+                to="skills"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={0}
+              >
+                Skills
+              </NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks
+                to="portfolio"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact="true"
+                offset={0}
+              >
+                Porfolio
+              </NavLinks>
             </NavItem>
           </NavMenu>
           <NavBtn>
