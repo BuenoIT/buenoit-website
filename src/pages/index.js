@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import Footer from '../components/HomeElements/Footer';
-import Hero from '../components/Hero';
-import InfoSection from '../components/Info';
-import { homeObjOne, homeObjThree, homeObjTwo } from '../components/Info/Data';
+import Hero from '../components/HomeElements/Hero';
+import InfoSection from '../components/HomeElements/Info';
+import {
+  homeObjOne,
+  homeObjThree,
+  homeObjTwo,
+} from '../components/HomeElements/Info/Data';
 import Navbar from '../components/HomeElements/Navbar';
 import Skills from '../components/HomeElements/Skills';
 import Topbar from '../components/HomeElements/Topbar';
+import ScrollButton from '../components/HomeElements/ScrollToTop';
 
 const HomePage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +28,7 @@ const HomePage = () => {
       <InfoSection {...homeObjTwo} />
       <Skills />
       <InfoSection {...homeObjThree} />
+      <ScrollButton />
       <Footer />
     </>
   );
