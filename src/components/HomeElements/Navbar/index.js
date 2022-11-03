@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
-import Logo from '../../images/guibuenologo.png';
+import Logo from '../../../images/guibuenologo.png';
 import { animateScroll as scroll } from 'react-scroll';
 import {
   Nav,

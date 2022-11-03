@@ -1,4 +1,5 @@
 import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import {
   FooterContainer,
@@ -17,6 +18,10 @@ import {
 } from './FooterElements';
 
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <>
       <FooterContainer>
@@ -55,7 +60,9 @@ const Footer = () => {
           </FooterLinksContainer>
           <SocialMedia>
             <SocialMediaWrap>
-              <SocialLogo to="/">Gui Bueno</SocialLogo>
+              <SocialLogo to="/" onClick={toggleHome}>
+                Gui Bueno
+              </SocialLogo>
               <WebsiteRights>
                 Guilherme Bueno © {new Date().getFullYear()} All rights
                 reserved.

@@ -1,7 +1,7 @@
 import React from 'react';
-import Skills1 from '../../images/skills1.svg';
-import Skills2 from '../../images/skills2.svg';
-import Skills3 from '../../images/skills3.svg';
+import Skills1 from '../../../images/skills1.svg';
+import Skills2 from '../../../images/skills2.svg';
+import Skills3 from '../../../images/skills3.svg';
 import {
   SkillsCard,
   SkillsContainer,
