@@ -8,6 +8,7 @@ import {
   FormInput,
   FormLabel,
   FormWrap,
+  FormWrapInput,
   Icon,
 } from './contactme';
 
@@ -19,12 +20,27 @@ const ContactMe = () => {
           <Icon to="/">Gui Bueno</Icon>
           <FormContent>
             <Form method="post" action="/contactme">
-              <FormH1>Text me</FormH1>
-              <FormLabel htmlFor="for">Email</FormLabel>
-              <FormInput type="email" name="email" required />
-              <FormLabel htmlFor="for">Message</FormLabel>
-              <FormInput type="text" name="descr" required />
-              <FormButton type="submit">Send</FormButton>
+              <FormH1>
+                Get in touch with me and I will gladly respond as soon as
+                possible
+              </FormH1>
+              <FormWrapInput>
+                <FormLabel htmlFor="for">Enter your email: </FormLabel>
+                <FormInput type="email" name="email" required />
+              </FormWrapInput>
+              <FormWrapInput>
+                <FormLabel htmlFor="for">Enter your message: </FormLabel>
+                <FormInput
+                  type="text"
+                  name="descr"
+                  required
+                  rows="5"
+                  cols="33"
+                />
+              </FormWrapInput>
+              <FormWrapInput>
+                <FormButton type="submit">Send</FormButton>
+              </FormWrapInput>
             </Form>
           </FormContent>
         </FormWrap>
