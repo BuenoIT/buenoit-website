@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import ContactMePage from './pages/contactme';
 import HomePage from './pages';
+import NotFound from './pages/404';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -19,6 +20,7 @@ const router = createBrowserRouter(
         element={<ContactMePage />}
         action={ContactMePage.action}
       />
+      <Route path="*" element={<NotFound />} />
     </>
   )
 );

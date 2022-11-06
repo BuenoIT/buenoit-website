@@ -14,6 +14,7 @@ export const homeObjOne = {
   dark: true,
   primary: true,
   darkText: false,
+  where: '/',
 };
 
 export const homeObjTwo = {
@@ -32,6 +33,7 @@ export const homeObjTwo = {
   dark: true,
   primary: true,
   darkText: true,
+  where: '/',
 };
 
 export const homeObjThree = {
@@ -50,4 +52,24 @@ export const homeObjThree = {
   dark: true,
   primary: true,
   darkText: true,
+  where: '/',
+};
+
+export const homeObjFour = {
+  id: '404',
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
+  topLine: '404',
+  headLine: 'Page Not Found',
+  description:
+    'We are sorry, but this page does not exist. Please try a different page.',
+  buttonLabel: 'Visit home page',
+  imgStart: true,
+  img: require('../../../images/gui-bueno-nobg-6.png'),
+  alt: 'Guilherme Bueno Photo',
+  dark: true,
+  primary: true,
+  darkText: true,
+  where: '/',
 };
