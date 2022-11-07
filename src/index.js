@@ -10,6 +10,7 @@ import {
 import ContactMePage from './pages/contactme';
 import HomePage from './pages';
 import NotFound from './pages/404';
+import Background from './components/BackgroundElements';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,7 @@ const router = createBrowserRouter(
         element={<ContactMePage />}
         action={ContactMePage.action}
       />
+      <Route path="/background" element={<Background />} />
       <Route path="*" element={<NotFound />} />
     </>
   )

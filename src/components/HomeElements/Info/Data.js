@@ -33,7 +33,7 @@ export const homeObjTwo = {
   dark: true,
   primary: true,
   darkText: true,
-  where: '/',
+  where: '/background',
 };
 
 export const homeObjThree = {
