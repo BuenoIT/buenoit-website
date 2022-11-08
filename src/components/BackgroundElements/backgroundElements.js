@@ -21,3 +21,16 @@ export const BackgroundH3 = styled.h3`
 export const BackgroundH5 = styled.h5``;
 
 export const BackgroundP = styled.p``;
+
+export const BackgroundWrap = styled.div`
+  display: flex;
+`;
+
+export const BackgroundWrapLeft = styled.div``;
+
+export const BackgroundWrapRight = styled.div``;
+
+export const BackgroundImg = styled.img`
+  width: 50px;
+  height: 50px;
+`;
