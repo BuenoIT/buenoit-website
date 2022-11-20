@@ -1,11 +1,7 @@
 import styled from 'styled-components';
 
 export const BackgroundWrapper = styled.div`
-  background: linear-gradient(
-    168deg,
-    rgba(1, 147, 86, 1) 0%,
-    rgba(10, 201, 122, 1) 100%
-  );
+  background: linear-gradient(168deg, #d8ece4 0%, #378e6a 100%);
   color: black;
 `;
 
@@ -28,9 +24,13 @@ export const BackgroundWrap = styled.div`
 
 export const BackgroundWrapLeft = styled.div``;
 
-export const BackgroundWrapRight = styled.div``;
+export const BackgroundWrapRight = styled.div`
+  display: flex;
+  align-items: center;
+`;
 
 export const BackgroundImg = styled.img`
-  width: 50px;
-  height: 50px;
+  width: 80px;
+  height: 80px;
+  margin: 5px;
 `;

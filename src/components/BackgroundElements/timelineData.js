@@ -1,18 +1,45 @@
 export let timelineElements = [
   {
     id: 1,
-    title: 'Part-Time Deliveries Associate',
-    location: 'Cambridge, Ontario. CA',
+    title: 'Diploma: Computer Programming',
+    location: 'Waterloo, Canada',
     decription:
-      'Associat responsible to lead deliveries in the store, loading pallets to the truck',
-    date: 'Feb 2022 - Current',
-    company: 'The Home Depot',
-    icon: 'work',
-    companyLogo: '../../../images/home-depot-logo.png',
-    alt: 'The Home Depot Logo',
+      'The program emphasizes problem-solving skills using the latest versions of Microsoft, Java, and open-source software to develop business and web applications. Object-oriented analysis, design, agile methodologies, and programming techniques are mastered and applied throughout the program.',
+    achievements: 'GPA: Current 3.98',
+    date: 'Jan 2022 - Apr 2023 (In progress)',
+    company: 'Conestoga College',
+    icon: 'school',
+    companyLogo: require('../../images/logo-conestoga-college.png'),
+    alt: 'Conestoga College Logo',
   },
   {
     id: 2,
+    title: 'IT Project Manager',
+    location: 'Sao Paulo, Brazil',
+    decription:
+      'Management of API integration projects between banks to provide credit card payment services, loans and payment of due accounts',
+    achievements: '',
+    date: 'Apr 2021 - Aug 2021',
+    company: 'Dock',
+    icon: 'work',
+    companyLogo: require('../../images/dock-logo.jpg'),
+    alt: 'Dock Logo',
+  },
+  {
+    id: 3,
+    title: 'MBA in Project Management',
+    location: 'Sao Paulo, Brazil',
+    achievements: 'GPA: 3.96',
+    decription:
+      'MBA in Project Management from USP, integrating planning, execution and control through agile project management. MBA aligned with PMBOK, the PMI (Project Management Institute) best practice guide.',
+    date: 'Oct 2019 - Jul 2021',
+    company: 'MBA USP/Esalq',
+    icon: 'school',
+    companyLogo: require('../../images/logo-usp-esalq.png'),
+    alt: 'USP Esalq Logo',
+  },
+  {
+    id: 3,
     title: 'Project Manager',
     location: 'Sao Paulo, BR',
     decription:
@@ -20,11 +47,11 @@ export let timelineElements = [
     date: 'Apr 21 - Aug 21',
     company: 'Dock Technology',
     icon: 'work',
-    companyLogo: '',
+    companyLogo: 'https://imgbox.com/26HxIROG',
     alt: 'Dock Logo',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Project Manager',
     location: 'Lojas Riachuelo S/A',
     decription:
@@ -36,11 +63,11 @@ export let timelineElements = [
     alt: 'Lojas Riachuelo S/A',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Project Manager',
     location: 'Sao Paulo',
     decription:
-      '- Management of business intelligence projects for AB-InBev companies.\n- Portfolio management of 30 simultaneous projects, with resource, cost, and delivery quality management.',
+      '- Management of business intelligence projects for AB-InBev companies.\\n - Portfolio management of 30 simultaneous projects, with resource, cost, and delivery quality management.',
     date: 'August 18',
     company: 'Walmart',
     icon: 'work',

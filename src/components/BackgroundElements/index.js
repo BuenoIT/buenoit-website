@@ -16,9 +16,11 @@ import {
   BackgroundWrapper,
   BackgroundWrapRight,
 } from './backgroundElements';
-import { FaBriefcase, FaChalkboardTeacher } from 'react-icons/fa';
+import { FaBriefcase, FaBookReader } from 'react-icons/fa';
 
 const Background = () => {
+  let workIconStyles = { background: '#6da8a7' };
+  let schoolIconStyles = { background: '#6cd69c' };
   return (
     <>
       <BackgroundWrapper>
@@ -30,19 +32,22 @@ const Background = () => {
               <VerticalTimelineElement
                 key={element.key}
                 date={element.date}
-                icon={isWorkIcon ? <FaBriefcase /> : <FaChalkboardTeacher />}
+                iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
+                icon={isWorkIcon ? <FaBriefcase /> : <FaBookReader />}
+                animate={false}
               >
                 <BackgroundWrap>
                   <BackgroundWrapLeft>
                     <BackgroundH3>{element.title}</BackgroundH3>
                     <BackgroundH5>{element.location}</BackgroundH5>
+                    <BackgroundP>{element.achievements}</BackgroundP>
                     <BackgroundP>{element.decription}</BackgroundP>
                   </BackgroundWrapLeft>
                   <BackgroundWrapRight>
                     <BackgroundImg
                       src={element.companyLogo}
                       alt={element.alt}
-                    ></BackgroundImg>
+                    />
                   </BackgroundWrapRight>
                 </BackgroundWrap>
               </VerticalTimelineElement>
