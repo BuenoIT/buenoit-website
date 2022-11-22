@@ -6,6 +6,7 @@ import {
   FormContent,
   FormH1,
   FormInput,
+  FormInputTextArea,
   FormLabel,
   FormWrap,
   FormWrapInput,
@@ -30,8 +31,8 @@ const ContactMe = () => {
               </FormWrapInput>
               <FormWrapInput>
                 <FormLabel htmlFor="for">Enter your message: </FormLabel>
-                <FormInput
-                  type="text"
+                <FormInputTextArea
+                  type="textarea"
                   name="descr"
                   required
                   rows="5"

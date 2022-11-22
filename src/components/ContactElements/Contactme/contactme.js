@@ -102,6 +102,14 @@ export const FormInput = styled.input`
   border-radius: 4px;
 `;
 
+export const FormInputTextArea = styled.textarea`
+  width: 60%;
+  padding: 16px 16px;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 4px;
+`;
+
 export const FormButton = styled.button`
   background: #fff;
   width: 20%;

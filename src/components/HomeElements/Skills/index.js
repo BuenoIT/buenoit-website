@@ -19,24 +19,26 @@ const Skills = () => {
       <SkillsWrapper>
         <SkillsCard>
           <SkillsIcon src={Skills1} />
-          <SkillsH2>Project Management</SkillsH2>
+          <SkillsH2> Project Management </SkillsH2>
           <SkillsP>
-            .......................................................................
+            {' '}
+             Experience managing complex initiatives for multinational companies
+            for seven years{' '}
           </SkillsP>
         </SkillsCard>
         <SkillsCard>
           <SkillsIcon src={Skills2} />
           <SkillsH2>Javascript Frameworks</SkillsH2>
           <SkillsP>
-            .......................................................................
+            {' '}
+            A passion for building websites with React, Redux, Jquery, VUE,
+            Angular and Node JS{' '}
           </SkillsP>
         </SkillsCard>
         <SkillsCard>
           <SkillsIcon src={Skills3} />
           <SkillsH2>Cloud Computing</SkillsH2>
-          <SkillsP>
-            .......................................................................
-          </SkillsP>
+          <SkillsP>Knowledge working with Google Cloud and AWS</SkillsP>
         </SkillsCard>
       </SkillsWrapper>
     </SkillsContainer>
