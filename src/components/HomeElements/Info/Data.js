@@ -52,7 +52,7 @@ export const homeObjThree = {
   dark: true,
   primary: true,
   darkText: true,
-  where: '/',
+  where: '/portfolio',
 };
 
 export const homeObjFour = {
