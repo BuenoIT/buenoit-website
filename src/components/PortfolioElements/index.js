@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Card from './CardElement';
+import { CardContainer, CardH1, CardWrapper } from './PorfolioElements';
 
 const Portolio = () => {
   const [error, setError] = useState(null);
@@ -51,32 +52,30 @@ const Portolio = () => {
     return <div>Loading...</div>;
   } else {
     return (
-      <>
-        <div>
-          {csharpProjects.map((item) => (
-            <a key={item.id} href={item.html_url} target="_blank">
-              {' '}
-              <Card
-                title={item.name}
-                url={item.url}
-                description={item.description}
-              />
-            </a>
-          ))}
-        </div>
-        <div>
-          {reactJSProjects.map((item) => (
-            <a key={item.id} href={item.html_url} target="_blank">
-              {' '}
-              <Card
-                title={item.name}
-                url={item.url}
-                description={item.description}
-              />
-            </a>
-          ))}
-        </div>
-      </>
+      <div>
+        <CardContainer>
+          <CardH1>C#</CardH1>
+          <CardWrapper>
+            {csharpProjects.map((item) => (
+              <a key={item.id} href={item.html_url}>
+                {' '}
+                <Card title={item.name} description={item.description} />
+              </a>
+            ))}
+          </CardWrapper>
+        </CardContainer>
+        <CardContainer>
+          <CardH1>ReactJS</CardH1>
+          <CardWrapper>
+            {reactJSProjects.map((item) => (
+              <a key={item.id} href={item.html_url}>
+                {' '}
+                <Card title={item.name} description={item.description} />
+              </a>
+            ))}
+          </CardWrapper>
+        </CardContainer>
+      </div>
     );
   }
 };
