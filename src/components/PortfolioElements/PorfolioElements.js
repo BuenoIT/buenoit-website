@@ -28,13 +28,12 @@ export const CardH1 = styled.h1`
 `;
 
 export const CardWrapper = styled.div`
-  max-width: 1000px;
+  //max-width: 1000px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 400px);
   align-items: center;
-  grid-gap: 16px;
-  padding: 0 50px;
+  grid-gap: 8px;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
@@ -44,4 +43,9 @@ export const CardWrapper = styled.div`
     grid-template-columns: 1fr;
     padding: 0 20px;
   }
+`;
+
+export const CardAnchor = styled.a`
+  text-decoration: none;
+  color: black;
 `;
