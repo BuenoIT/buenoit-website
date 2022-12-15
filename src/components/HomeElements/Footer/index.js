@@ -3,7 +3,6 @@ import { animateScroll as scroll } from 'react-scroll';
 import { FaLinkedin, FaGithub, FaInstagram } from 'react-icons/fa';
 import {
   FooterContainer,
-  FooterLink,
   FooterLinkItems,
   FooterLinksContainer,
   FooterLinksWrapper,
@@ -29,32 +28,16 @@ const Footer = () => {
           <FooterLinksContainer>
             <FooterLinksWrapper>
               <FooterLinkItems>
-                <FooterLinkTitle>Block 1</FooterLinkTitle>
-                <FooterLink to="/">Item 1</FooterLink>
-                <FooterLink to="/">Item 2</FooterLink>
-                <FooterLink to="/">Item 3</FooterLink>
-                <FooterLink to="/">Item 4</FooterLink>
+                <FooterLinkTitle to="/about">About Me</FooterLinkTitle>
               </FooterLinkItems>
               <FooterLinkItems>
-                <FooterLinkTitle>Block 2</FooterLinkTitle>
-                <FooterLink to="/">Item 1</FooterLink>
-                <FooterLink to="/">Item 2</FooterLink>
-                <FooterLink to="/">Item 3</FooterLink>
-                <FooterLink to="/">Item 4</FooterLink>
+                <FooterLinkTitle to="/background">Background</FooterLinkTitle>
               </FooterLinkItems>
               <FooterLinkItems>
-                <FooterLinkTitle>Block 3</FooterLinkTitle>
-                <FooterLink to="/">Item 1</FooterLink>
-                <FooterLink to="/">Item 2</FooterLink>
-                <FooterLink to="/">Item 3</FooterLink>
-                <FooterLink to="/">Item 4</FooterLink>
+                <FooterLinkTitle to="/portfolio">Portfolio</FooterLinkTitle>
               </FooterLinkItems>
               <FooterLinkItems>
-                <FooterLinkTitle>Block 4</FooterLinkTitle>
-                <FooterLink to="/">Item 1</FooterLink>
-                <FooterLink to="/">Item 2</FooterLink>
-                <FooterLink to="/">Item 3</FooterLink>
-                <FooterLink to="/">Item 4</FooterLink>
+                <FooterLinkTitle to="/contactme">Contact Me</FooterLinkTitle>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>

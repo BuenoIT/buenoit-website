@@ -12,7 +12,6 @@ const Card = (props) => {
       <CardH1>{props.title}</CardH1>
       <CardH2>Create on: {formatDate(props.dateCreate)}</CardH2>
       <CardH2>Last Update: {formatDate(props.dateUpdate)}</CardH2>
-      <hr />
       <CardP>{props.description}</CardP>
     </CardCard>
   );

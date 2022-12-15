@@ -49,12 +49,8 @@ export const FooterLinkItems = styled.div`
   }
 `;
 
-export const FooterLinkTitle = styled.h1`
+export const FooterLinkTitle = styled(Link)`
   font-size: 14px;
-  margin-bottom: 16px;
-`;
-
-export const FooterLink = styled(Link)`
   color: #fff;
   text-decoration: none;
   margin-bottom: 0.5rem;
@@ -65,6 +61,8 @@ export const FooterLink = styled(Link)`
     transition: 0.3s ease-out;
   }
 `;
+
+export const FooterLink = styled(Link)``;
 
 export const SocialMedia = styled.section`
   max-width: 1000px;

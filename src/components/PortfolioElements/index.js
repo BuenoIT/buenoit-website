@@ -78,12 +78,8 @@ const PortolioStructure = () => {
     return <div>Loading...</div>;
   } else {
     return (
-      <div>
-        <p>
-          BuenoIT's github is automatically fetching API information for this
-          page
-        </p>
-        <CardContainer>
+      <>
+        <CardContainer id="c#">
           <CardH1>C#</CardH1>
           <CardWrapper>
             {csharpProjects.map((item) => (
@@ -99,7 +95,7 @@ const PortolioStructure = () => {
             ))}
           </CardWrapper>
         </CardContainer>
-        <CardContainer>
+        <CardContainer id="react">
           <CardH1>ReactJS</CardH1>
           <CardWrapper>
             {reactJSProjects.map((item) => (
@@ -115,7 +111,7 @@ const PortolioStructure = () => {
             ))}
           </CardWrapper>
         </CardContainer>
-        <CardContainer>
+        <CardContainer id="javascript">
           <CardH1>Javascript</CardH1>
           <CardWrapper>
             {javascriptProjects.map((item) => (
@@ -131,7 +127,7 @@ const PortolioStructure = () => {
             ))}
           </CardWrapper>
         </CardContainer>
-        <CardContainer>
+        <CardContainer id="aspNet">
           <CardH1>AspNet</CardH1>
           <CardWrapper>
             {aspNetProjects.map((item) => (
@@ -147,7 +143,7 @@ const PortolioStructure = () => {
             ))}
           </CardWrapper>
         </CardContainer>
-      </div>
+      </>
     );
   }
 };
