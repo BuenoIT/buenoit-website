@@ -14,15 +14,6 @@
 
 ### 📃 Description
 
-It displays an ecommerce site called bookstorely, which allows the user to add products and proceed to next steps (cart and payment).
-Features:
-
-- Add products to the cart by clicking a button
-- See total quantity of products insert in the cart
-- Proceed to cart by clicking a button
-- See the different itens added to the cart
-- Click to make payment
-- Print receipt with all the purchase details such as tax calculation of 13%.
 
 ### 🔍 Additionals
 
