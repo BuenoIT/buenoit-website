@@ -12,6 +12,7 @@ import HomePage from './pages';
 import NotFound from './pages/404';
 import Background from './components/BackgroundElements';
 import Portfolio from './pages/portfolio';
+import AboutMePage from './pages/aboutme';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
         element={<ContactMePage />}
         action={ContactMePage.action}
       />
+      <Route path="about" element={<AboutMePage />} />
       <Route path="background" element={<Background />} />
       <Route path="portfolio" element={<Portfolio />} />
       <Route path="*" element={<NotFound />} />

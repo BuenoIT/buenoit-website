@@ -5,10 +5,36 @@ const ButtonsNav = () => {
   return (
     <>
       <ButtonsNavContainer>
-        <ButtonNav to="c#">C#</ButtonNav>
-        <ButtonNav to="react">React JS</ButtonNav>
-        <ButtonNav to="javascript">Javascript</ButtonNav>
-        <ButtonNav to="aspNet">ASP Net</ButtonNav>
+        <ButtonNav to="c#" smooth={true} duration={500} spy={true} exact="true">
+          C#
+        </ButtonNav>
+        <ButtonNav
+          to="react"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+        >
+          React JS
+        </ButtonNav>
+        <ButtonNav
+          to="javascript"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+        >
+          Javascript
+        </ButtonNav>
+        <ButtonNav
+          to="aspNet"
+          smooth={true}
+          duration={500}
+          spy={true}
+          exact="true"
+        >
+          ASP Net
+        </ButtonNav>
       </ButtonsNavContainer>
     </>
   );

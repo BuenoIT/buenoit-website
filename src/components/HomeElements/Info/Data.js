@@ -14,7 +14,7 @@ export const homeObjOne = {
   dark: true,
   primary: true,
   darkText: false,
-  where: '/',
+  where: '/about',
 };
 
 export const homeObjTwo = {
