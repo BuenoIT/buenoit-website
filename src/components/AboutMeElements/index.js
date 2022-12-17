@@ -1,6 +1,6 @@
 import React from 'react';
-import { MyLifeSection } from './AboutMeElements';
-import { SliderInfos } from './Data';
+import { MyLifeH2, MyLifeSection } from './AboutMeElements';
+import { SliderInfos } from './CarrouselData';
 import { Carousel } from 'react-carousel-minimal';
 
 const MyLife = (slides) => {
@@ -14,12 +14,23 @@ const MyLife = (slides) => {
   };
   return (
     <>
+      {' '}
+      <MyLifeH2>
+        I am an experienced IT project manager interested in software
+        development because of the passion and dedication I have seen in
+        developers throughout my career. My goal as a developer is to make a
+        positive impact on an organization through teamwork, hard work,
+        problem-solving, and adaptability. <br />
+        <br />
+        At the moment, I am living in Canada. I am near the end of my diploma in
+        computer programming. This allows me to be prepared for a career change.
+      </MyLifeH2>
       <MyLifeSection>
         <Carousel
           data={SliderInfos}
           time={6000}
-          width="900px"
-          height="500px"
+          width="1000px"
+          height="600px"
           captionStyle={captionStyle}
           radius="10px"
           slideNumber={true}

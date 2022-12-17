@@ -29,38 +29,20 @@ export const MyLifeWrapper = styled.div`
 
 export const MyLifeSection = styled.section`
   position: relative;
-  height: 100vh;
   display: flex;
+  margin-bottom: 20%;
   justify-content: center;
   align-items: center;
 `;
 
-export const MyLifeImage = styled.img`
-  width: 1000px;
-  height: 600px;
-  border-radius: 10px;
-`;
+export const MyLifeH2 = styled.h2`
+  margin-top: 100px;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-size: 14px;
+  color: #313131;
 
-export const RightArrow = styled.div`
-  position: absolute;
-  top: 50%;
-  right: 32px;
-  font-size: 3rem;
-  color: #000;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
+  @media screen and(max-width: 480px) {
+    font-size: 12px;
+  }
 `;
-
-export const LeftArrow = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 32px;
-  font-size: 3rem;
-  color: #000;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-`;
-
-export const MyImageDiv = styled.div``;
