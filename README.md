@@ -2,9 +2,9 @@
 
 ### 💾 Program versions
 
-2022-11-01: Created By Guilherme Bueno
-2022-12-17: Website was published into the cloud through htttp://www.buenostech.com domain.
-2022-12-24: The first release of fixes has been created and implemented
+- 2022-11-01: Created By Guilherme Bueno
+- 2022-12-17: Website was published into the cloud through www.buenostech.com domain.
+- 2022-12-24: The first release of fixes has been created and implemented
 
 ### 🔨 Built on
 
