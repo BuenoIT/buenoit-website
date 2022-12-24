@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import Logo from '../../../images/guibuenologo.png';
-import { animateScroll as scroll } from 'react-scroll';
+import { animateScroll as LinkS } from 'react-scroll';
 import {
   Nav,
   NavbarContainer,
@@ -31,7 +31,7 @@ const Navbar = ({ toggle }) => {
   }, []);
 
   const toggleHome = () => {
-    scroll.scrollToTop();
+    LinkS.scrollToTop();
   };
 
   return (

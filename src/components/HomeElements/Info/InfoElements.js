@@ -96,4 +96,10 @@ export const Img = styled.img`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
+
+  @media screen and (max-width: 768px) {
+    margin: 0 0 250px 0;
+    width: 80%;
+    height: 80%;
+  }
 `;

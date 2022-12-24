@@ -43,7 +43,7 @@ const Background = () => {
             let isWorkIcon = element.icon === 'work';
             return (
               <VerticalTimelineElement
-                key={element.key}
+                key={element.id}
                 date={element.date}
                 iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
                 icon={isWorkIcon ? <FaBriefcase /> : <FaBookReader />}
@@ -53,15 +53,6 @@ const Background = () => {
                   <BackgroundWrapLeft>
                     <BackgroundH3>{element.title}</BackgroundH3>
                     <BackgroundH5>{element.location}</BackgroundH5>
-                    <BackgroundP>
-                      <div>
-                        {' '}
-                        <b>Achievements:</b>{' '}
-                        {element.achievements?.map((sub) => {
-                          return <div>{sub.name}</div>;
-                        })}
-                      </div>
-                    </BackgroundP>
                     <BackgroundP>
                       <b>Description:</b> {element.decription}
                     </BackgroundP>

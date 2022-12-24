@@ -28,17 +28,17 @@ const Skills = () => {
         </SkillsCard>
         <SkillsCard>
           <SkillsIcon src={Skills2} />
-          <SkillsH2>Javascript Frameworks</SkillsH2>
+          <SkillsH2>Technology Stack</SkillsH2>
           <SkillsP>
             {' '}
-            A passion for building websites with React, Redux, Jquery, VUE,
-            Angular and Node JS{' '}
+            A passion for building websites with .NET ASP, React, Redux, Jquery,
+            and Node JS{' '}
           </SkillsP>
         </SkillsCard>
         <SkillsCard>
           <SkillsIcon src={Skills3} />
           <SkillsH2>Cloud Computing</SkillsH2>
-          <SkillsP>Knowledge working with Google Cloud and AWS</SkillsP>
+          <SkillsP>Knowledge working with Azure, Google Cloud and AWS</SkillsP>
         </SkillsCard>
       </SkillsWrapper>
     </SkillsContainer>
