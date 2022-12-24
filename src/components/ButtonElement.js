@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import { Link as LinkR } from 'react-router-dom';
 
-export const Button = styled(Link)`
+export const Button = styled(LinkR)`
   border-radius: 50px;
   background: ${({ primary }) => (primary ? '#42c920' : '#313131')};
   white-space: nowrap;

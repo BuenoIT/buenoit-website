@@ -1,133 +1,77 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled, { createGlobalStyle, css } from 'styled-components';
 
-export const Container = styled.div`
-  min-height: 692px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 0;
-  z-index: 0;
-  overflow: hidden;
-  background: linear-gradient(
-    168deg,
-    rgba(1, 147, 86, 1) 0%,
-    rgba(10, 201, 122, 1) 100%
-  );
-`;
+export const FormStyle = createGlobalStyle`
+  html {
+    height: 100%;
+  }
 
-export const FormWrap = styled.div`
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  @media screen and (max-width: 400px) {
-    height: 80%;
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(49,49,49);
+    background: #42c920;
+    height: 100%;
+    margin: 0;
+    color: #313131;
   }
 `;
 
-export const Icon = styled(Link)`
-  position: fixed;
-  top: 0;
+const sharedStyles = css`
+  background-color: #eee;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin: 10px 0 20px 0;
   padding: 20px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: 700;
-  font-size: 32px;
-
-  @media screen and (max-width: 480px) {
-    margin-left: 16px;
-    margin-top: 8px;
-  }
+  box-sizing: border-box;
 `;
 
-export const FormContent = styled.div`
-  background: #313131;
-  width: 55%;
-  height: 70%;
+export const FormWrapper = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-
-  @media screen and (max-width: 480px) {
-    padding: 10px;
-  }
+  align-items: center;
+  height: 100vh;
+  padding: 0 20px;
+  margin-top: 60px;
 `;
 
 export const Form = styled.form`
-  max-width: 400px;
-  height: auto;
   width: 100%;
-  z-index: 1;
-  display: grid;
-  margin: 0 auto;
-  padding: 80px 32px;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
-
-  @media screen and (max-width: 400px) {
-    padding: 32px 32px;
-  }
-`;
-
-export const FormH1 = styled.h1`
-  margin-bottom: 40px;
-  color: #fff;
-  font-size: 20px;
-  font-weight: 400;
-  text-align: center;
-`;
-
-export const FormWrapInput = styled.div`
-  display: flex;
-  justify-content: center;
-`;
-
-export const FormLabel = styled.label`
-  margin-bottom: 8px;
-  margin-right: 10px;
-  font-size: 14px;
-  color: #fff;
+  max-width: 700px;
+  padding: 40px;
+  background-color: #fff;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 `;
 
 export const FormInput = styled.input`
-  width: 60%;
-  padding: 16px 16px;
-  margin-bottom: 32px;
-  border: none;
-  border-radius: 4px;
+  display: block;
+  width: 100%;
+  ${sharedStyles}
 `;
 
-export const FormInputTextArea = styled.textarea`
-  width: 60%;
-  padding: 16px 16px;
-  margin-bottom: 32px;
-  border: none;
-  border-radius: 4px;
+export const FormTextArea = styled.textarea`
+  background-color: #eee;
+  width: 100%;
+  min-height: 100px;
+  resize: none;
+  ${sharedStyles}
 `;
 
 export const FormButton = styled.button`
-  background: #fff;
-  width: 20%;
-  padding: 16px 0;
-  border: none;
-  border-radius: 4px;
+  display: block;
+  background-color: #42c920;
+  color: #fff;
+  font-size: 0.9rem;
+  border: 0;
+  border-radius: 5px;
+  height: 40px;
+  padding: 0 20px;
   cursor: pointer;
-  align-items: center;
-
-  &:hover {
-    background: #42c920;
-    color: #fff;
-  }
+  box-sizing: border-box;
 `;
 
-export const Text = styled.span`
-  text-align: center;
-  margin-top: 24px;
-  color: #fff;
-  font-size: 14px;
+export const FormErrorArea = styled.div`
+  color: red;
+  font-weight: 800;
+  margin: 0 0 40px 0;
 `;
