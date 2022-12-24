@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import Logo from '../../../images/guibuenologo.png';
-import { animateScroll as scroll } from 'react-scroll';
 import {
   Nav,
   NavbarContainer,
@@ -28,15 +27,11 @@ const NavbarSecondary = ({ toggle }) => {
     window.addEventListener('scroll', changeNav);
   }, []);
 
-  const toggleHome = () => {
-    scroll.scrollToTop();
-  };
-
   return (
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/" onClick={toggleHome}>
+          <NavLogo to="/">
             <NavImg src={Logo}></NavImg>
           </NavLogo>
           <MobileIcon onClick={toggle}>

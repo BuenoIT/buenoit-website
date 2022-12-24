@@ -87,6 +87,7 @@ export const NavLinks = styled(LinkS)`
 
   &.active {
     color: #42c920;
+    background-color: #313131;
     border-bottom: 3px solid #30aa64;
   }
 
