@@ -5,7 +5,24 @@ const ButtonsNav = () => {
   return (
     <>
       <ButtonsNavContainer>
-        <ButtonNav to="c#" smooth={true} duration={500} spy={true} exact="true">
+        <ButtonNav
+          to="favorites"
+          smooth={true}
+          duration={500}
+          spy={true}
+          offset={-80}
+          exact="true"
+        >
+          Favorites
+        </ButtonNav>
+        <ButtonNav
+          to="c#"
+          smooth={true}
+          duration={500}
+          spy={true}
+          offset={-80}
+          exact="true"
+        >
           C#
         </ButtonNav>
         <ButtonNav
@@ -13,15 +30,17 @@ const ButtonsNav = () => {
           smooth={true}
           duration={500}
           spy={true}
+          offset={-80}
           exact="true"
         >
           React JS
         </ButtonNav>
-        <ButtonNav
+        {/* <ButtonNav
           to="javascript"
           smooth={true}
           duration={500}
           spy={true}
+          offset={-80}
           exact="true"
         >
           Javascript
@@ -31,10 +50,11 @@ const ButtonsNav = () => {
           smooth={true}
           duration={500}
           spy={true}
+          offset={-80}
           exact="true"
         >
           ASP Net
-        </ButtonNav>
+        </ButtonNav> */}
       </ButtonsNavContainer>
     </>
   );
