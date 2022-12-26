@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardCard, CardH1, CardH2, CardP } from './CardElements';
+import { CardCard, CardH1, CardH2, CardIcon, CardP } from './CardElements';
 
 const Card = (props) => {
   const formatDate = (dateString) => {
@@ -10,9 +10,20 @@ const Card = (props) => {
   return (
     <CardCard>
       <CardH1>{props.title}</CardH1>
-      <CardH2>Create on: {formatDate(props.dateCreate)}</CardH2>
-      <CardH2>Last Update: {formatDate(props.dateUpdate)}</CardH2>
-      <CardP>{props.description}</CardP>
+      <CardIcon src={props.image} alt={props.alt} />
+      <CardP>
+        <b>Create on:</b> {formatDate(props.dateCreate)}
+      </CardP>
+      <CardP>
+        <b>Last Update:</b> {formatDate(props.dateUpdate)}
+      </CardP>
+      <CardP>
+        <b>Language:</b> {props.language}
+      </CardP>
+      <CardP>
+        <b>Framework:</b> {props.framework}
+      </CardP>
+      <CardH2>{props.description}</CardH2>
     </CardCard>
   );
 };
