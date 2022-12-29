@@ -51,6 +51,7 @@ export const CardP = styled.p`
 `;
 
 export const CardH1 = styled.h1`
+  font-size: 30px;
   border-radius: 20%;
   border: solid #eee 5px;
   text-align: center;

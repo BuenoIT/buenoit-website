@@ -91,6 +91,10 @@ export const SocialLogo = styled(Link)`
   align-items: center;
   margin-bottom: 16px;
   font-weight: bold;
+
+  &:hover {
+    color: #42c920;
+  }
 `;
 
 export const WebsiteRights = styled.small`
@@ -108,4 +112,8 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
+
+  &:hover {
+    color: #42c920;
+  }
 `;

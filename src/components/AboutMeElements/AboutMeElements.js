@@ -1,48 +1,105 @@
 import styled from 'styled-components';
+import { FaDownload } from 'react-icons/fa';
 
-export const MyLifeWrapper = styled.div`
-  background: #0c0c0c;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 30px;
-  height: 800px;
-  position: relative;
-  z-index: 1;
+export const AboutMeContainer = styled.div`
+  margin-top: 82px;
+  margin-bottom: 2px;
+  display: grid;
+  height: 90vh;
+  color: white;
+  grid-template-rows: 0.5fr 0.9fr 0.5fr;
+  grid-template-areas:
+    'main main content'
+    'main main content'
+    'main main extracontent';
+  text-align: center;
+  grid-gap: 0.25rem;
+  transition: all 0.25s ease-in-out;
+  color: white;
+  overflow: scroll;
 
-  :before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradiant(
-        180deg,
-        rgba(0, 0, 0, 0.2) 0%,
-        rgba(0, 0, 0, 0.6) 100%
-      ),
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
-    z-index: 2;
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1.2fr 1fr;
+    grid-template-areas:
+      'main'
+      'content'
+      'extracontent';
+  }
+`;
+export const AboutMeImage = styled.img`
+  width: 98%;
+  height: 100%;
+
+  @media (max-width: 768px) {
+    width: 60%;
+    height: 100%;
   }
 `;
 
-export const MyLifeSection = styled.section`
-  position: relative;
-  display: flex;
-  margin-bottom: 20%;
-  justify-content: center;
-  align-items: center;
+export const AboutMeMain = styled.main`
+  background: #1f2128;
+  color: white;
+  grid-area: main;
+  padding: 0.25rem;
 `;
 
-export const MyLifeH2 = styled.h2`
-  margin-top: 100px;
-  margin-left: 30%;
-  margin-right: 30%;
-  font-size: 14px;
-  color: #313131;
-
-  @media screen and(max-width: 480px) {
-    font-size: 12px;
+export const AboutMeContentBox = styled.div`
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  align-items: center;
+  grid-area: content;
+  justify-content: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
+`;
+
+export const AboutMeContent1 = styled.div`
+  background: #3d414e;
+  color: white;
+  font-family: 'Mukta', sans-serif;
+  font-size: 1.1rem;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 5px;
+  }
+`;
+
+export const AboutMeContent2 = styled(AboutMeContent1)`
+  background: #575c6f;
+`;
+
+export const AboutMeExtraContent = styled.div`
+  background: #1f2128;
+  padding: 0.25rem;
+  width: 100%;
+  height: 100%;
+  grid-area: extracontent;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+export const AboutMeExtraContentText = styled.div`
+  flex-grow: 2;
+  font-family: 'Mukta', sans-serif;
+  font-size: 1.1rem;
+`;
+export const AboutMeExtraContentDownload = styled.div`
+  background: #3d414e;
+  flex-grow: 1;
+`;
+export const AboutMeAnchor = styled.a``;
+export const AboutMeDownloadIcon = styled(FaDownload)`
+  color: white;
+  font-size: 2rem;
 `;
