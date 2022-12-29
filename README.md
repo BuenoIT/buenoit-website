@@ -12,7 +12,7 @@
 
 ### 📃 Description
 
-This is an online portfolio of Guilherme Bueno's ongoing projects, which use various technologies and solve multiple challenges in the tech world.
+This is an online portfolio of Guilherme Bueno's ongoing projects, which use various technologies and solve multiple development challenges.
 
 ### 🔍 Additionals
 
