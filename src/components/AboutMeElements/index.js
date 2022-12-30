@@ -1,57 +1,76 @@
 import React from 'react';
-import { MyLifeH2, MyLifeSection } from './AboutMeElements';
-import { SliderInfos } from './CarrouselData';
-import { Carousel } from 'react-carousel-minimal';
+import Resume from '../../docs/Guilherme_Bueno_Resume.pdf';
+import Image from '../../images/pictureAboutMe.jpg';
+import {
+  AboutMeAnchor,
+  AboutMeContainer,
+  AboutMeContent1,
+  AboutMeContent2,
+  AboutMeContentBox,
+  AboutMeDownloadIcon,
+  AboutMeExtraContent,
+  AboutMeExtraContentDownload,
+  AboutMeExtraContentText,
+  AboutMeImage,
+  AboutMeMain,
+} from './AboutMeElements';
 
-const MyLife = (slides) => {
-  const captionStyle = {
-    fontSize: '2em',
-    fontWeight: 'bold',
-  };
-  const slideNumberStyle = {
-    fontSize: '15px',
-    fontWeight: 'bold',
-  };
+const MyLife = () => {
   return (
     <>
-      {' '}
-      <MyLifeH2>
-        I am an experienced IT project manager interested in software
-        development because of the passion and dedication I have seen in
-        developers throughout my career. My goal as a developer is to make a
-        positive impact on an organization through teamwork, hard work,
-        problem-solving, and adaptability. <br />
-        <br />
-        At the moment, I am living in Canada. I am near the end of my diploma in
-        computer programming. This allows me to be prepared for a career change.
-      </MyLifeH2>
-      <MyLifeSection>
-        <Carousel
-          data={SliderInfos}
-          time={6000}
-          width="1000px"
-          height="600px"
-          captionStyle={captionStyle}
-          radius="10px"
-          slideNumber={true}
-          slideNumberStyle={slideNumberStyle}
-          captionPosition="bottom"
-          automatic={true}
-          dots={true}
-          pauseIconColor="white"
-          pauseIconSize="40px"
-          slideBackgroundColor="darkgrey"
-          slideImageFit="cover"
-          thumbnails={true}
-          thumbnailWidth="100px"
-          style={{
-            textAlign: 'center',
-            maxWidth: '1000px',
-            maxHeight: '500px',
-            margin: '40px auto',
-          }}
-        />
-      </MyLifeSection>
+      <AboutMeContainer>
+        <AboutMeMain>
+          <AboutMeImage src={Image} />
+        </AboutMeMain>
+        <AboutMeContentBox>
+          <AboutMeContent1>
+            The value of respect and dedicated work has always been taught to me
+            by my father which has been working for many years at the same
+            company.
+            <br />
+            In my early twenties, I received an offer to work for Walmart's IT
+            department as a trainee. I was taught how to deal with complex
+            projects and the importance of information technology in a business.
+            In response to the global boom in e-commerce, I got promoted at
+            Walmart and began managing different projects with their own
+            complexities. In the years since I've been managing and reporting
+            status to CEOs and Directors about innovative projects that have
+            helped companies succeed.
+            <br />
+            As a project manager, I worked on projects for Walmart, CVS Health,
+            AB-Inbev, Carters Oshkosh, Keyrus, and Dock partnering with
+            companies like IBM, Oracle, SAP, and others.
+          </AboutMeContent1>
+          <AboutMeContent2>
+            I decided to take on new challenges after working with developers
+            and product owners for many years.
+            <br />
+            It is my aim in Canada to earn a diploma in computer programming and
+            to find a job in the field as a developer.
+            <br />
+            Working hard and studying every day is what drives me to become
+            better and to achieve my goals
+          </AboutMeContent2>
+        </AboutMeContentBox>
+        <AboutMeExtraContent>
+          <AboutMeExtraContentText>
+            <p>
+              {' '}
+              Passionate about technology and wanting to contribute to the
+              world's transformation.
+            </p>
+          </AboutMeExtraContentText>
+          <br />
+          <AboutMeExtraContentDownload>
+            Download résumé
+            <br />
+            <AboutMeAnchor href={Resume} download>
+              <AboutMeDownloadIcon />
+            </AboutMeAnchor>
+          </AboutMeExtraContentDownload>
+          <br />
+        </AboutMeExtraContent>
+      </AboutMeContainer>
     </>
   );
 };

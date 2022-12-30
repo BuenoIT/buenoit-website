@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Video from '../../../videos/video.mp4';
-import { Button } from '../../ButtonElement';
+import { Button } from '../../ButtonElementScroll';
 import {
   HeroContainer,
   HeroBg,
@@ -35,6 +35,11 @@ const Hero = () => {
             onMouseLeave={onHover}
             primary="true"
             dark="true"
+            smooth={true}
+            duration={500}
+            spy={true}
+            exact="true"
+            offset={-80}
           >
             Get Started {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
