@@ -1,4 +1,5 @@
 import React from 'react';
+import Resume from '../../docs/Guilherme_Bueno_Resume.pdf';
 import Image from '../../images/pictureAboutMe.jpg';
 import {
   AboutMeAnchor,
@@ -59,12 +60,15 @@ const MyLife = () => {
               world's transformation.
             </p>
           </AboutMeExtraContentText>
+          <br />
           <AboutMeExtraContentDownload>
-            <AboutMeAnchor>
-              Download résumé
+            Download résumé
+            <br />
+            <AboutMeAnchor href={Resume} download>
               <AboutMeDownloadIcon />
             </AboutMeAnchor>
           </AboutMeExtraContentDownload>
+          <br />
         </AboutMeExtraContent>
       </AboutMeContainer>
     </>

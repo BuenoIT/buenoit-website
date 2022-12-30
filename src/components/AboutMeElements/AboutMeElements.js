@@ -97,8 +97,12 @@ export const AboutMeExtraContentText = styled.div`
 export const AboutMeExtraContentDownload = styled.div`
   background: #3d414e;
   flex-grow: 1;
+  padding: 10px;
 `;
-export const AboutMeAnchor = styled.a``;
+export const AboutMeAnchor = styled.a`
+  text-decoration: none;
+`;
+
 export const AboutMeDownloadIcon = styled(FaDownload)`
   color: white;
   font-size: 2rem;
